@@ -1,0 +1,371 @@
+/*Universal Style*/
+body {
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  color:#423F38;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kanit Regular'), local('Kanit-Regular'), url(https://fonts.gstatic.com/s/kanit/v3/5NAKUBdE3Nb95aTaJlZOXQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Kanit Medium'), local('Kanit-Medium'), url(https://fonts.gstatic.com/s/kanit/v3/RHqh14DjcvgZGJknoCzKXvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Kanit Bold'), local('Kanit-Bold'), url(https://fonts.gstatic.com/s/kanit/v3/mEn4jJ-yZGnuuUYbIaJjw_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/*Header*/
+
+header {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  align-items: center;
+  background-color: #F1F1F1;
+
+}
+
+ nav {
+   width: 75%;
+   text-align: right;
+   margin-right: 1.5rem;
+   font-size: 1.125rem;
+}
+nav li {
+  margin-right: 1rem;
+  font-weight: 400;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+
+li a:visited {
+  color: ##423F38;
+}
+
+li a:hover {
+  color: #000080;
+  transition: color 200ms ease 100ms;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2rem;
+  margin-left: 1.5rem;
+  text-transform: uppercase;
+  font-family: "kanit", sans-serif;
+  font-weight: 500;
+}
+
+.logo-img img {
+  height: 2.5rem;
+  width: auto;
+}
+
+.logo a {
+  color: #000080;
+}
+.icon {
+  display:none;
+}
+
+ul li {
+  display: inline;
+
+}
+
+@media only screen and (max-width: 768px) {
+  nav li {
+    display: none;
+  }
+
+
+
+
+}
+
+/*Banner Section*/
+
+#banner {
+  background-color: #000000;
+}
+
+
+.banner-img {
+  max-width: 100%;
+  ;
+}
+
+.banner-img img {
+  width: 100%;
+
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  background-color: #000080;
+  padding-top: 1.5rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.message h1, .message h2 {
+  margin-bottom: 1.5rem;
+
+}
+
+.btn {
+  font-size: 1.125rem;
+  background-color: #28282E;
+  color: white;
+  text-align: center;
+  width: 80%;
+  padding:.5rem;
+
+}
+
+.btn a:visited {
+  color: #fff;
+}
+
+.btn a:hover {
+  color: #CF9B00;
+  font-size: 2rem;
+  transition: color 250ms ease 150ms,
+  font-size 500ms ease-out 150ms;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .banner-img {
+    max-width: 100%;
+  }
+
+  .banner-img img {
+    height: auto;
+  }
+
+  .message {
+    max-width: 100%;
+    padding: 2rem 1rem;
+    margin: 0;
+    align-items: center;
+  }
+
+  .btn {
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+/*Learning Section*/
+
+#learn {
+  background-color: #000000;
+  padding-bottom: 3rem;
+  color: #fff;
+
+
+}
+
+#learn h1, #exhibit h1 {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+}
+
+#learn a:visited {
+  color: #fff;
+}
+
+#learn a:hover {
+  color: #000080;
+  transition: color 200ms ease 100ms;
+}
+
+.services {
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 0 4.5rem 0 4.5rem;
+}
+
+.service {
+  max-width: 25%;
+  height: auto;
+  padding: 1rem 2rem;
+
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+}
+
+.service h2 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.details {
+  padding: 1rem;
+  line-height: 1.5;
+  height: 8rem;
+
+}
+
+.details span {
+  padding: .5rem 0;
+}
+
+@media only screen and (max-width: 768px){
+
+  #learn {
+    border-top: hsl(0, 0%, 88%) solid 1px;
+  }
+
+  .service img, .service span, .service p {
+    display: none;
+  }
+
+  .services {
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .service {
+    max-width: 100%;
+    padding: 1rem 0 0 0;
+
+
+  }
+
+  .details {
+    height: 1rem;
+    background-color: #000080;
+    padding: 1rem 1rem 2rem 1rem;
+
+  }
+
+}
+
+/*Thesis Exhibit Section*/
+
+#exhibit {
+  background-color: #000080;
+  color: #fff;
+}
+
+#exhibit .text-content {
+  padding: 1.5rem 1rem 2rem 1rem;
+  font-size: 1.5rem;
+
+}
+
+
+.text-content p {
+  padding-bottom: .5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+
+  #exhibit {
+    border-top: hsl(0, 0%, 88%) solid 1px;
+  }
+
+  .section.flex {
+    max-width: 100%;
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+
+
+
+}
+
+/*Footer Section*/
+
+footer .container {
+  border-top: hsl(0, 0%, 88%) solid 1px;
+  padding: 1rem;
+}
+
+footer .container span {
+  width:100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .copyright {
+    padding: 1rem;
+  }
+
+  .terms {
+    display: none;
+  }
+
+  footer .container {
+    border-top: none;
+    padding: .25rem;
+  }
+
+
+}
