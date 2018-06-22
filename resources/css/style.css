@@ -127,7 +127,7 @@ ul li {
 /*Banner Section*/
 
 #banner {
-  background-image: url('../pictures/BW_Truck.JPG');
+  background-image: url('../pictures/BW_Truck.jpg');
   background-position-y: -10rem;
   height: 30rem;
 
@@ -241,7 +241,7 @@ h2 {
 /*Learning Section*/
 
 #learn {
-  background-image: url('../pictures/IMG_6069.JPG');
+  background-image: url('../pictures/IMG_6069.jpg');
   height: 20rem;
   background-color: #000000;
   padding-bottom: 3rem;
